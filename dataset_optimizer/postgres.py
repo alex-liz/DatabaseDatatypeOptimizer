@@ -21,15 +21,20 @@ class PostgresConfig:
     # Change this for cfg file
     @staticmethod
     def datatype_varchar():
-        varchar = None
+        varchar = 10485760
         char = None
-        # Numbers
+        text = None
+
+    @staticmethod
+    def datatype_numbers():
         smallint = 2
         int = 4
         bigint = 8
         real = 4
         double = 8
-        # Serials
+
+    @staticmethod
+    def datatype_serials():
         smallserial = 2
         serial = 4
         bigserial = 8
